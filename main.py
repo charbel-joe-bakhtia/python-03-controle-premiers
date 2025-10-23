@@ -4,12 +4,17 @@ from math import sqrt
 
 
 def isprime(p):
-
-    # votre code ici
-
-    pass
-
-#### Fonction principale
+    premier = True
+    for i in range(2,p):
+        if p%i  == 0 :
+            premier = False
+    return premier
+print("Nombres Premiers ; \n")
+print(f"722 est-il un nombre premier ? \n {isprime(722)}")
+print(f"17 est-il un nombre premier ? \n {isprime(17)}")
+print(f"3 est-il un nombre premier ? \n {isprime(3)}")
+print(f"2 est-il un nombre premier ? \n {isprime(2)}")
+print(f"15 est-il un nombre premier ? \n {isprime(15)}")
 
 
 def main():
